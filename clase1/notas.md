@@ -29,6 +29,9 @@ Evitar modificaciones de los metodos y atributos desde afuera de una clase
 
 *El nombre calificado de la clase* es la concatenación del nombre del paquete y del nombre de la clase
 El uso de un Paquete tiene como finalidad la creación de un *Namespace* esto con la finalidad de generar grupos de clases.
+
 Para asegurar originalidad en cada paquete es recomendable usar el nombre del dominio de la empresa pero invertido.
+
 Todo el nombre del paquete va en minúsculas¡¡¡
- 
+
+Comentar todos los métodos que son públicos 
