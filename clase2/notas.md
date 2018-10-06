@@ -10,13 +10,14 @@ RAR
 En java existen diferentes tipos de variables. Los datos primitivos de java son:
 * String ( Objeto )
 * char ( 1 byte )
-* int ( 4 byte ) [ -2 147 483 648 , 2 147 483 648 ] Se puede colocar **_** sustituyendo el uso de **,**. Se puede usar la notación cientfica **2.1E12**
+* int ( 4 byte ) [ -2 147 483 648 , 2 147 483 648 ] Se puede colocar **_** sustituyendo el uso de **,**. Se puede usar la notación cientfica **2.1E12**. Su Wrappet es **Integer**
 * long ( 8 byte )
-* double ( 4 byte )
-* boolean ( 1 byte )
+* double ( 4 byte ) Su Wrappet es **Double**
+* boolean ( 1 byte ) Su Wrappet es **Boolean**
 * short ( 2 byte )
 * byte ( 1 byte ) 
 Todas las variables primitivas se inicializan con 0.
+Todos los tipos primitivos tienen un envolvente tipo Objeto, a estos envolventes se les llama **Wrape**, esto permite que los tipos primitivos puedan ser tratados como Objetos.
 Todos los objetos heredan de la clase **Object**, los cuales si no son inicializadas tiene el valor de null.
 
 La sintaxis para inicializar una variable es la siguiente:
@@ -54,6 +55,41 @@ Para crear un archivo jar lo hacemos a traves del siguiente comando:
 ```bash
 jar cfm [NombreJar.jar] META-INF/MANIFEST.MF *.class
 ```
- 
+## Condicionales
+En java puede usarse los operadores terciarios, los cuales asignan un valor, su estructura es la siguiente:
+```java
+[Variable] = [Condición que devuelve un boolean] ? [Asignación si es verdadero] : [Asignación si es falso]
+```
+## Arrays
+Colección de objetos de un mismo tipo.
+La sintáxis en la declaración de un array es la siguiente:
+```java
+Tipo_de_dato [] nombre_array = {valor1, valor2, valor3};
+Tipo_de_dato [] nombre_array = new Tipo_de_dato[tamaño_de_array];
+```
+Los indices de acceso para los arrays comienzan en 0.
 
+## Loops
+### For each
+La sintáxis de un for each es la siguiente:
+```java
+String [] arrays = { "Valor1", "Valor2", "Valor3" };
+for ( String array : arrays){
+	System.out.println(array);
+}
+```
+**break**: Rompe el ciclo
+**continue**: La iteración se salta al siguiente elemento.
+
+Por estándar no debe haber mas de 3 anidaciones de ciclos.
+
+## Clases
+Una clase esta compuesta de Propiedades y Métodos.
+Las Propiedades identifican las caracteristicas de la clase, en tanto que los Métodos se refieren a las acciones que puede realizar dicha clase.
+
+Tipos de Métodos, deben ser nombrados de la siguiente manera:
+* **get**: Devuelven algo
+* **set**: Modifican algo
+* **is/has/constrains**: Devuelven un valor booleano
+* **verbo en infinitivo**: Realizan alguna acción
 
