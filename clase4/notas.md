@@ -29,3 +29,5 @@ Control de acceso = La manera en que vas a definir quien puede ver, a que puede 
 | Vacio (No modifier)| Si    | Si      | No       | No    |
 | private            | Si    | No      | No       | No    |
 
+Encapsular es unir comportamientos de diferentes objetos en un solo objeto, una forma de encapsular es la creación de paquetes.
+
